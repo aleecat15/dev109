@@ -1,1 +1,61 @@
+font-family: "Arial", Verdana, sans-serif;
+color: #665544;
+text-align: center;
+}
+body {
+              width: 90%;
+              margin: 0 auto;}#content {
+              overflow: auto;}#nav, #feature, #footer {
+              margin: 1%;}.column1, .column2, .column3 {
+              width: 31.3%;
+              float: left;
+              margin: 1%;}.column3 {
+              margin-right: 0%;}
+li {
+              display: inline;
+              padding: 0.5em;}#nav, #footer {
+              background-color: #efefef;
+              padding: 0.5em 0;}#feature, .article {
+              height: 10em;
+              margin-bottom: 1em;
+              background-color: #efefef;}
+header {
+   font-family: 'CactronRegular';
+   font-weight: normal;
+   font-style: normal;
+   text-align:center;
+}
 
+#nav{
+  background-color:#ba8434;
+  text-align:center;
+}
+#feature {
+  background-color:#ecb2ed;
+  background-image: url("https://png.pngtree.com/png-clipart/20230312/ourmid/pngtree-transparent-watercolor-flowers-png-image_6646331.png");
+  background-size:contain;
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+.article.column1{
+  background-color:#f5ee90;
+}
+
+.article.column2{
+  background-color:#4ab332;
+}
+
+.article.column3{
+  background-color:#ba345c;
+}
+#footer{
+  background-color:#90e4f5;
+}
+
+body {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/beautiful-summer-garden-featuring-a-spectacular-royalty-free-image-1711378499.jpg?crop=0.752xw:1.00xh;0.0192xw,0&resize=1200:*");
+  background-size:cover;
+  background-position:bottom;
+  background-repeat:no-repeat;
+}
