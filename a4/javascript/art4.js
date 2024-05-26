@@ -37,3 +37,30 @@ function firstName(){
     return (validFirstname);
 };
 
+LastName.addEventListener('blur', lastName, false);
+function lastName(){
+    //1) Create variable
+    var validLastname=false;
+
+    //2) read value from HTML
+    var lastname = document.getElementById("LastName").value;
+    var errorMessages = "";
+
+    //3) Do validation
+    if (lastname==="null" || lastname==="" || lastname.length > 50 ) {
+        errorMessages += "<p>The last name is required and cannot be greater than 50 characters</p>";
+        console.log("Last name invalid — length")
+        } else if (lastname.match("^[a-zA-Z ,.'-]+$")===null) {
+            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            console.log("Last name invalid — bad characters")
+        } else {
+                validLastname = true;
+                console.log("Last name valid")
+        };
+
+    //4) Send error message to HTML
+    document.getElementById("lname").innerHTML = errorMessages;
+
+    //5) return status of each field
+    return (validLastname);
+};
