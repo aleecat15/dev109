@@ -21,12 +21,13 @@ function firstName(){
     //3) Do validation
     if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
         errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
-    if (firstname==="null" || firstname==="" || firstname.length < 0 ) {
+    else if (firstname==="null" || firstname==="" || firstname.length < 0 ) {
         errorMessages += "<p>The first name is required</p>";
         console.log("First name invalid — length")
         } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
             errorMessages += "<p>Invalid character in first name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("First name invalid — bad characters")
+        }
         } else {
                 validFirstname = true;
                 console.log("First name valid")
