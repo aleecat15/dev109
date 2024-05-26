@@ -71,5 +71,34 @@ function lastName(){
     document.getElementById("lname").innerHTML = errorMessages;
 
     //5) return status of each field
-    return (validLastname);
+    return (validFirstname && validLastname);
+};
+
+Email.addEventListener('blur', Email, false);
+function Email(){
+    //1) Create variable
+    var validEmail=false;
+
+    //2) read value from HTML
+    var Email = document.getElementById("Email").value;
+    var errorMessages = "";
+    
+    //3) Do validation
+    var userEmail = document.getElementById("email").value;
+    var atpos = userEmail.indexOf("@");
+    var dotpos = userEmail.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length) {
+    // send error message. For example:  
+        errorMessages += "<p>Invalid email</p>";
+        console.log("Invalid Email")
+        } else {
+            validEmail = true;
+            console.log("Valid Email")
+        };
+
+    //4) Send error message to HTML
+    document.getElementById("femail").innerHTML = errorMessages;
+
+    //5) return status of each field
+    return (validEmail);
 };
