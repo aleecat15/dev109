@@ -1,6 +1,15 @@
 function validatedForm() {
-    if (firstName() //&&
-       // lastName()
+    if (firstName() &&
+        lastName() &&
+        Email() &&
+        Phone() &&
+        UserName() &&
+        Password() &&
+        Address() &&
+        City() &&
+        State() &&
+        Country() &&
+        Zipcode() &&
     )
     return true;
     else
