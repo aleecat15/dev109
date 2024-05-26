@@ -1,4 +1,4 @@
-function isValid() {
+function validatedForm() {
     if (firstName() //&&
        // lastName()
     )
@@ -23,7 +23,7 @@ function firstName(){
         errorMessages += "<p>The first name is required and cannot be greater than 20 characters</p>";
         console.log("First name invalid — length")
         } else if (firstname.match("^[a-zA-Z ,.'-]+$")===null) {
-            errorMessages += "<p>Invalid caracter in last name (accepts only A-Z, a-z, and ,.'-)</p>";
+            errorMessages += "<p>Invalid character in first name (accepts only A-Z, a-z, and ,.'-)</p>";
             console.log("First name invalid — bad characters")
         } else {
                 validFirstname = true;
@@ -37,15 +37,3 @@ function firstName(){
     return (validFirstname);
 };
 
-function validateForm(){
-//1) create a variable to control status of each field. Assume that they are not valid
-
-//2) create variables to read the values from html text inputs
-
-//3) do the validation
-
-//4) send error messages 
-
-//5) return the status of each field
-
-}
