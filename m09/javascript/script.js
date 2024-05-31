@@ -1,5 +1,5 @@
 document.addEventListener("click", function() {
-      // Add a click event listener to the document to create dots
+      //Event Listener
       document.addEventListener("click", function(event) {
         if (event.target.className !== 'clear-button') {
           var dot = document.createElement("div");
@@ -10,12 +10,13 @@ document.addEventListener("click", function() {
         }
       });
 
-      // Add a click event listener to the clear button to remove all dots
+      //Clear button
       var clearButton = document.querySelector(".clear-button");
       clearButton.addEventListener("click", function() {
         var dots = document.querySelectorAll(".dot");
         dots.forEach(function(dot) {
           dot.parentNode.removeChild(dot);
         });
+        event.stopPropagation();    
       });
     });
