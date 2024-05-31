@@ -1,3 +1,7 @@
+body {
+    background-color:beige;
+}
+
 .warning {
     color:red;
     font-weight:bold;
