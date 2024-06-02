@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const items = ["mickey", "donald", "goofy"]; // Add more items as needed
+    const items = ["mickey", "monkey", "lock"];
     let foundItems = 0;
 
     items.forEach(item => {
