@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #9fbefc;
     justify-content: center;
     align-items: center;
@@ -9,7 +8,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: #9fbefc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
