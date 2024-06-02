@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra's I Spy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I Spy Game</h1>
+        <p>Find the following objects in the image:</p>
+        <ul id="itemList">
+            <li id="mickey">Mickey Mouse</li>
+            <li id="donald">Donald Duck</li>
+            <li id="goofy">Goofy</li>
+            <!-- Add more items here -->
+        </ul>
+        <div class="image-container">
+            <img src="your-image.jpg" usemap="#image-map" alt="I Spy Image" id="gameImage">
+            <map name="image-map">
+                <area target="" alt="Mickey Mouse" title="Mickey Mouse" coords="34,44,270,350" shape="rect" id="mickeyArea">
+                <area target="" alt="Donald Duck" title="Donald Duck" coords="290,172,333,250" shape="rect" id="donaldArea">
+                <area target="" alt="Goofy" title="Goofy" coords="337,300,385,346" shape="rect" id="goofyArea">
+                <!-- Add more areas here -->
+            </map>
+        </div>
+        <button id="replayButton" style="display:none;" onclick="replay()">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
