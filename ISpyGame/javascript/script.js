@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function foundItem(item) {
         const listItem = document.getElementById(item);
-        listItem.style.textDecoration = "line-through";
-        foundItems++;
+        if (listItem.style.textDecoration !== "line-through") {
+            listItem.style.textDecoration = "line-through";
+            foundItems++;
+        }
         if (foundItems === items.length) {
             setTimeout(() => {
                 if (confirm("You found all the items! Do you want to play again?")) {
@@ -26,4 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
         location.reload();
     }
 });
-
