@@ -117,7 +117,6 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 #menu2 ul li a:hover { color: #c12; border-bottom: 1px dotted #c12; }
 
 #content { float: left; width: 580px; margin: 10px 0 40px 20px;}
-#interestcontent {width: 580px; margin: auto}
 #content h2 { font-weight: normal; font-size: 22px; line-height: 33px; }
 #content h3 { font-size: 17px; font-weight: normal; }
 
