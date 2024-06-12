@@ -6,7 +6,7 @@
 
     //First Name
     if (fname == "" || !/^[a-zA-Z]+$/.test(fname) || fname.length >= 25) {
-      alert("Please enter a valid first name (letters only, less than 25 characters)");
+      alert("Please enter a valid First Name (Letters only, less than 25 characters)");
       return false;
     }
 
